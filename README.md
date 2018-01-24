@@ -1,12 +1,12 @@
 # Get Started 
 
-Repository contains ansible playbook that is use to install basic softwares on new Linux OS.
+Repository contains ansible playbook that is use to install basic softwares on new Linux OS. It is inspired by [get_started_with_fedora](https://github.com/khomesh24/get_started_with_fedora/) by @khomesh24
 
 ## List of softwares
 
 - vim 
 
-## How to start
+## Prequisites
 
 To run ansible playbook, system should have ready with **python 2** and **ansible**
 
