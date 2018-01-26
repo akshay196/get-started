@@ -1,0 +1,12 @@
+---
+# hosts could have been "remote" or "all" as well
+- hosts: local
+  connection: local
+  name: Get started playbook
+  become: yes
+
+  tasks:
+    - name: Install vim
+      dnf:
+        name: vim
+        state: latest
