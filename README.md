@@ -26,7 +26,9 @@ This playbook is designed to install softwares on local machine. We can also run
 
 To start installing softwares on your system, execute playbook as,
 
-```$ ansible-playbook -i hosts install.yml```
+```$ ansible-playbook -i hosts --ask-become-pass install.yml```
+
+Type your password if ask.
 
 # Licensing
 
