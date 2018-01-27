@@ -1,10 +1,10 @@
-# Get Started 
+# Get Started
 
-Repository contains ansible playbook that is use to install basic softwares on new Linux OS. It is inspired by [get_started_with_fedora](https://github.com/khomesh24/get_started_with_fedora/) by @khomesh24
+Repository contains ansible playbook that is use to install basic softwares on new Linux OS.
 
 ## List of softwares
 
-- vim 
+- vim
 
 ## Prequisites
 
@@ -30,6 +30,10 @@ To start installing softwares on your system, execute playbook as,
 
 Type your password if ask.
 
-# Licensing
+## Licensing
 
 Code is licensed under GNU General Public license v3.0. See [LICENSE](https://github.com/akshay196/get-started/blob/master/LICENSE) for full license.
+
+## Acknowledgment
+
+This is inspired by [get_started_with_fedora](https://github.com/khomesh24/get_started_with_fedora/) by @khomesh24
