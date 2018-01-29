@@ -30,7 +30,8 @@
         state: present
     - name: Configure vim-powerline
       blockinfile:
-        path: ~/.vimrc
+        path: '/home/{{ ansible_user }}/.vimrc'
+        create: yes
         insertafter: EOF
         content: |
           python3 from powerline.vim import setup as powerline_setup

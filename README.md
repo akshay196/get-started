@@ -14,7 +14,7 @@ To run ansible playbook, system should have ready with **python 2** and **ansibl
 
 Execute these commands(for fedora):
 
-```$ sudo dnf install python2 python-pip```
+```$ sudo dnf install python2 python-pip libselinux-python```
 
 ```$ pip install -U ansible```
 
