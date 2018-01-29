@@ -10,3 +10,15 @@
       dnf:
         name: vim
         state: latest
+    - name: Install Powerline
+      dnf:
+        name: powerline
+        state: latest
+      notify:
+        - Install powerline-fonts
+
+  handlers:
+    - name: Install powerline-fonts
+      dnf:
+        name: powerline-fonts
+        state: present
