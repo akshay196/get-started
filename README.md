@@ -6,6 +6,7 @@ Repository contains ansible playbook that is use to install basic softwares on n
 
 - vim
 - Powerline
+- vim-powerline
 
 ## Prequisites
 
