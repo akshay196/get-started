@@ -5,6 +5,7 @@ Repository contains ansible playbook that is use to install basic softwares on n
 ## List of softwares
 
 - vim
+- xclip
 - Powerline
 - vim-powerline
 

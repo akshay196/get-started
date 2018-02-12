@@ -4,12 +4,18 @@
   connection: local
   name: Get started playbook
   become: yes
+  vars:
+    - packages:
+        - vim
+        - xclip
 
   tasks:
-    - name: Install vim
+    - name: Install Packages
       dnf:
-        name: vim
+        name: "{{item}}"
         state: latest
+      with_items:
+        - "{{packages}}"
     - name: Install Powerline
       dnf:
         name: powerline
