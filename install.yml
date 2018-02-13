@@ -10,6 +10,12 @@
         - xclip
 
   tasks:
+    - name: Install updates for Fedora system
+      dnf:
+        name=*
+        state=latest
+      when: ansible_distribution == "Fedora"
+
     - name: Install Packages
       dnf:
         name: "{{item}}"
