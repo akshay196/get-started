@@ -15,13 +15,17 @@ To run ansible playbook, system should have ready with **python 2** and **ansibl
 
 Execute these commands(for fedora):
 
-```$ sudo dnf install python2 python-pip libselinux-python```
+```
+$ sudo dnf install python2 python-pip libselinux-python
 
-```$ pip install -U ansible```
+$ pip install -U ansible
+```
 
 Check ansible version by executing,
 
-```$ ansible --version```
+```
+$ ansible --version
+```
 
 ## How to run playbook
 
@@ -29,7 +33,9 @@ This playbook is designed to install softwares on local machine. We can also run
 
 To start installing softwares on your system, execute playbook as,
 
-```$ ansible-playbook -i hosts --ask-become-pass install.yml```
+```
+$ ansible-playbook -i hosts -u <user-name> --ask-become-pass install.yml
+```
 
 Type your password if ask.
 
