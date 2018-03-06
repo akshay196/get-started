@@ -34,7 +34,7 @@ This playbook is designed to install softwares on local machine. We can also run
 To start installing softwares on your system, execute playbook as,
 
 ```
-$ ansible-playbook -i hosts -u <user-name> --ask-become-pass install.yml
+$ ansible-pull -U https://github.com/akshay196/get-started -i hosts --ask-become-pass install.yml
 ```
 
 Type your password if ask.
