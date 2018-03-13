@@ -8,6 +8,7 @@ Repository contains ansible playbook that is use to install basic softwares on n
 - xclip
 - Powerline
 - vim-powerline
+- Google Chrome stable
 
 ## Prequisites
 

@@ -44,6 +44,13 @@
         owner=root
         group=root
         mode=0644
+      register: chrome_repo
+
+    - name: Install chrome stable
+      dnf:
+        name: google-chrome-stable
+        state: latest
+      when: chrome_repo|succeeded
 
   handlers:
     - name: Install powerline-fonts
