@@ -22,18 +22,28 @@
         state: latest
       with_items:
         - "{{packages}}"
+
     - name: Install Powerline
       dnf:
         name: powerline
         state: latest
       notify:
         - Install powerline-fonts
+
     - name: Install vim-powerline
       dnf:
         name: vim-powerline
         state: latest
       notify:
         - Configure vim-powerline
+
+    - name: Enable chrome repo
+      template:
+        src={{ playbook_dir }}/templates/google-chrome.repo.j2
+        dest=/etc/yum.repos.d/google-chrome.repo
+        owner=root
+        group=root
+        mode=0644
 
   handlers:
     - name: Install powerline-fonts
